@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "titulo": "Edificios, espacios y servicios físicos del campus de la UPV",
+    "descripcion": "Inventario de los espacios del campus de la Universidad Politécnica de Victoria. Las aulas se identifican por la letra del edificio, el piso y el número (por ejemplo, A208 = edificio A, segundo piso, aula 08).",
+    "fuentes": [
+      "Cargas académicas publicadas por Servicios Escolares (aulas A208, B203, C200, C203)",
+      "Estructura Orgánica UPV (POE 25/08/2022)",
+      "Descripción de instalaciones del campus en directorios universitarios (Infouniversitaria, Comoestudiarmx)",
+      "upvictoria.edu.mx (Unidad de Salud Estudiantil, Biblioteca, Contacto)"
+    ],
+    "ultima_revision": "2026-11-23",
+    "nota": "Los campos con valor null no se han verificado en una fuente oficial. Completar con un recorrido o con el croquis oficial del campus antes de publicarlos en el asistente.",
+    "convencion_aulas": {
+      "formato": "<Edificio><Piso><Número>",
+      "ejemplos": [
+        {"codigo": "A208", "alias": "A8", "edificio": "A", "piso": 2, "aula": "08"},
+        {"codigo": "B203", "edificio": "B", "piso": 2, "aula": "03"},
+        {"codigo": "C200", "edificio": "C", "piso": 2, "aula": "00"},
+        {"codigo": "C203", "edificio": "C", "piso": 2, "aula": "03"}
+      ]
+    }
+  },
+  "campus": {
+    "nombre": "Campus Universidad Politécnica de Victoria",
+    "direccion": "Av. Nuevas Tecnologías 5902, Parque Científico y Tecnológico de Tamaulipas (TECNOTAM), Carretera Victoria–Soto la Marina km 5.5",
+    "codigo_postal": "87138",
+    "ciudad": "Ciudad Victoria",
+    "estado": "Tamaulipas",
+    "pais": "México",
+    "telefono": "(834) 171 1100",
+    "horario_clases": {
+      "turno_matutino": "07:00-14:45",
+      "turno_vespertino": "14:00-20:44",
+      "duracion_sesion_minutos": 54
+    }
+  },
+  "edificios": [
+    {
+      "id": "ED-A",
+      "nombre": "Edificio A",
+      "tipo": "Docencia",
+      "uso": ["Aulas de clase"],
+      "pisos_conocidos": [2],
+      "aulas_conocidas": ["A208 (A8)"],
+      "programas_que_lo_usan": ["ITI", "ITIID"],
+      "verificado": true,
+      "notas": "En la carga académica de ITI 2-2 aparece el aula A208, también nombrada A8."
+    },
+    {
+      "id": "ED-B",
+      "nombre": "Edificio B",
+      "tipo": "Docencia",
+      "uso": ["Aulas de clase"],
+      "pisos_conocidos": [2],
+      "aulas_conocidas": ["B203"],
+      "programas_que_lo_usan": ["ISA"],
+      "verificado": true,
+      "notas": "En la carga académica de Estancia I (ISA, mayo de 2025) aparece el aula B203."
+    },
+    {
+      "id": "ED-C",
+      "nombre": "Edificio C",
+      "tipo": "Docencia",
+      "uso": ["Aulas de clase", "Clases de inglés"],
+      "pisos_conocidos": [2],
+      "aulas_conocidas": ["C200", "C203"],
+      "programas_que_lo_usan": ["LCIA", "Inglés plan 24 BIS"],
+      "verificado": true,
+      "notas": "En la carga académica de Inglés Plan 24 BIS (agosto de 2025) aparecen las aulas C200 y C203."
+    },
+    {
+      "id": "ED-BIB",
+      "nombre": "Biblioteca",
+      "tipo": "Servicios académicos",
+      "uso": ["Préstamo en sala y a domicilio", "Consulta de acervo", "Biblioteca virtual", "Espacios de estudio"],
+      "verificado": true,
+      "notas": "La UPV cuenta con un edificio de biblioteca. Recargo por retraso: $30.00 por día. Ver servicios/biblioteca.md."
+    },
+    {
+      "id": "ED-LAB",
+      "nombre": "Laboratorios y talleres",
+      "tipo": "Laboratorios",
+      "uso": ["Prácticas de mecatrónica, manufactura, sistemas automotrices, electrónica y cómputo"],
+      "responsable": "Departamento de Talleres (Secretaría Académica)",
+      "verificado": true,
+      "notas": "El campus tiene laboratorios especializados por carrera. Falta registrar el nombre y la ubicación de cada laboratorio."
+    },
+    {
+      "id": "ED-ADM",
+      "nombre": "Área administrativa",
+      "tipo": "Administración",
+      "uso": ["Rectoría", "Secretaría Académica", "Secretaría Administrativa", "Servicios Escolares", "Recursos Financieros", "Vinculación"],
+      "verificado": false,
+      "notas": "Las áreas existen según el organigrama oficial; su ubicación física exacta dentro del campus está por confirmar."
+    },
+    {
+      "id": "ED-USE",
+      "nombre": "Unidad de Salud Estudiantil",
+      "tipo": "Salud",
+      "uso": ["Atención médica", "Atención psicológica", "Promoción de la salud"],
+      "responsable": "Departamento de Servicios Estudiantiles",
+      "verificado": true,
+      "notas": "Ubicación exacta dentro del campus por confirmar. En emergencias, llamar al 911."
+    },
+    {
+      "id": "ED-CAF",
+      "nombre": "Cafetería",
+      "tipo": "Alimentos",
+      "uso": ["Venta de alimentos y bebidas"],
+      "cantidad": 2,
+      "verificado": false,
+      "notas": "Directorios universitarios mencionan una cafetería moderna; opiniones de usuarios reportan dos cafeterías."
+    },
+    {
+      "id": "ED-DEP-1",
+      "nombre": "Cancha techada de usos múltiples",
+      "tipo": "Deportivo",
+      "uso": ["Básquetbol", "Voleibol", "Eventos"],
+      "verificado": true,
+      "notas": null
+    },
+    {
+      "id": "ED-DEP-2",
+      "nombre": "Campo de fútbol",
+      "tipo": "Deportivo",
+      "uso": ["Fútbol"],
+      "superficie": "Pasto sintético",
+      "verificado": true,
+      "notas": null
+    },
+    {
+      "id": "ED-EST",
+      "nombre": "Estacionamiento",
+      "tipo": "Servicios generales",
+      "capacidad_aproximada": 130,
+      "superficie": "Pavimentado",
+      "verificado": true,
+      "notas": "Capacidad reportada en la descripción del campus."
+    },
+    {
+      "id": "ED-TRANS",
+      "nombre": "Parada del transporte escolar",
+      "tipo": "Servicios generales",
+      "uso": ["Ascenso y descenso del transporte escolar (Transpaís)"],
+      "verificado": false,
+      "notas": "Rutas 2024: Ruta 01 Libertad y Ruta 02 Tamatán. Costo: $31.00 por viaje sencillo."
+    },
+    {
+      "id": "ED-LOCK",
+      "nombre": "Lockers",
+      "tipo": "Servicios generales",
+      "costo_mensual_mxn": 50.00,
+      "verificado": true,
+      "notas": "Renta mensual según la tabla de tarifas escolares."
+    }
+  ]
+}

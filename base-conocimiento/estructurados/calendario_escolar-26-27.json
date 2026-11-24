@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "titulo": "Calendario escolar 2026-2027 de la Universidad Politécnica de Victoria",
+    "descripcion": "Periodos cuatrimestrales, fechas clave y días de descanso del ciclo escolar 2026-2027. Cada evento indica si la fecha está confirmada por una fuente oficial o si es una estimación basada en el esquema cuatrimestral de la UPV.",
+    "fuentes": [
+      "Convocatoria para Nuevo Ingreso Septiembre–Diciembre 2026 (UPV)",
+      "upvictoria.edu.mx/aspirantes",
+      "Ley Federal del Trabajo, artículo 74 (días de descanso obligatorio)",
+      "Esquema cuatrimestral del modelo de Universidades Politécnicas"
+    ],
+    "ultima_revision": "2026-11-23",
+    "estado": "PRELIMINAR: las fechas con \"confirmado\": false deben sustituirse por las del calendario oficial 2026-2027 publicado en www.upvictoria.edu.mx (Servicios Escolares → Calendario Escolar).",
+    "ciclo": "2026-2027",
+    "formato_fechas": "YYYY-MM-DD"
+  },
+  "periodos": [
+    {
+      "id": "2026-3",
+      "nombre": "Cuatrimestre septiembre–diciembre 2026",
+      "inicio_clases": "2026-08-31",
+      "fin_clases": "2026-12-11",
+      "confirmado_inicio": true,
+      "confirmado_fin": false,
+      "notas": "El inicio de clases (31 de agosto de 2026) está confirmado en la convocatoria de nuevo ingreso. La fecha de fin es estimada."
+    },
+    {
+      "id": "2027-1",
+      "nombre": "Cuatrimestre enero–abril 2027",
+      "inicio_clases": "2027-01-04",
+      "fin_clases": "2027-04-23",
+      "confirmado_inicio": false,
+      "confirmado_fin": false,
+      "notas": "Fechas estimadas. Incluye el periodo vacacional de Semana Santa y Pascua."
+    },
+    {
+      "id": "2027-2",
+      "nombre": "Cuatrimestre mayo–agosto 2027",
+      "inicio_clases": "2027-05-03",
+      "fin_clases": "2027-08-13",
+      "confirmado_inicio": false,
+      "confirmado_fin": false,
+      "notas": "Fechas estimadas."
+    }
+  ],
+  "eventos": [
+    {
+      "fecha_inicio": "2026-02-16",
+      "fecha_fin": "2026-05-29",
+      "evento": "Registro de aspirantes y solicitud de examen de admisión (nuevo ingreso sep–dic 2026)",
+      "tipo": "admision",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-06-10",
+      "fecha_fin": "2026-06-12",
+      "evento": "Examen de admisión (8:00–11:00 o 12:00–15:00 h)",
+      "tipo": "admision",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-06-19",
+      "fecha_fin": "2026-06-19",
+      "evento": "Publicación de resultados de admisión en SIISU",
+      "tipo": "admision",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-06-22",
+      "fecha_fin": "2026-06-26",
+      "evento": "Examen de ubicación de inglés",
+      "tipo": "admision",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-07-06",
+      "fecha_fin": "2026-07-16",
+      "evento": "Pre-inscripción e inscripción de nuevo ingreso",
+      "tipo": "inscripcion",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-08-28",
+      "fecha_fin": "2026-08-28",
+      "evento": "Publicación de horarios de clase de nuevo ingreso en SIISU",
+      "tipo": "inscripcion",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-08-31",
+      "fecha_fin": "2026-08-31",
+      "evento": "Inicio de clases del cuatrimestre septiembre–diciembre 2026",
+      "tipo": "inicio_clases",
+      "confirmado": true
+    },
+    {
+      "fecha_inicio": "2026-09-16",
+      "fecha_fin": "2026-09-16",
+      "evento": "Día de la Independencia de México (descanso obligatorio)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. V"
+    },
+    {
+      "fecha_inicio": "2026-11-02",
+      "fecha_fin": "2026-11-02",
+      "evento": "Día de Muertos (suspensión habitual de labores en el sector educativo)",
+      "tipo": "dia_inhabil",
+      "confirmado": false,
+      "notas": "No es descanso obligatorio por ley; confirmar en el calendario oficial."
+    },
+    {
+      "fecha_inicio": "2026-11-16",
+      "fecha_fin": "2026-11-16",
+      "evento": "Conmemoración del inicio de la Revolución Mexicana (tercer lunes de noviembre)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. VI"
+    },
+    {
+      "fecha_inicio": "2026-12-14",
+      "fecha_fin": "2027-01-01",
+      "evento": "Periodo vacacional de invierno",
+      "tipo": "vacaciones",
+      "confirmado": false,
+      "notas": "Fechas estimadas. El 25 de diciembre y el 1 de enero son descansos obligatorios por ley."
+    },
+    {
+      "fecha_inicio": "2026-12-25",
+      "fecha_fin": "2026-12-25",
+      "evento": "Navidad (descanso obligatorio)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. VIII"
+    },
+    {
+      "fecha_inicio": "2027-01-01",
+      "fecha_fin": "2027-01-01",
+      "evento": "Año Nuevo (descanso obligatorio)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. I"
+    },
+    {
+      "fecha_inicio": "2027-01-04",
+      "fecha_fin": "2027-01-04",
+      "evento": "Inicio de clases del cuatrimestre enero–abril 2027",
+      "tipo": "inicio_clases",
+      "confirmado": false
+    },
+    {
+      "fecha_inicio": "2027-02-01",
+      "fecha_fin": "2027-02-01",
+      "evento": "Día de la Constitución (primer lunes de febrero)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. II"
+    },
+    {
+      "fecha_inicio": "2027-03-15",
+      "fecha_fin": "2027-03-15",
+      "evento": "Natalicio de Benito Juárez (tercer lunes de marzo)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. III"
+    },
+    {
+      "fecha_inicio": "2027-03-22",
+      "fecha_fin": "2027-04-02",
+      "evento": "Vacaciones de Semana Santa y Pascua (Domingo de Resurrección: 28 de marzo de 2027)",
+      "tipo": "vacaciones",
+      "confirmado": false,
+      "notas": "Fechas estimadas con base en el calendario litúrgico 2027; confirmar en el calendario oficial."
+    },
+    {
+      "fecha_inicio": "2027-04-26",
+      "fecha_fin": "2027-04-30",
+      "evento": "Receso entre cuatrimestres y reinscripción para mayo–agosto 2027",
+      "tipo": "reinscripcion",
+      "confirmado": false
+    },
+    {
+      "fecha_inicio": "2027-05-01",
+      "fecha_fin": "2027-05-01",
+      "evento": "Día del Trabajo (descanso obligatorio; cae en sábado)",
+      "tipo": "dia_inhabil",
+      "confirmado": true,
+      "fundamento": "LFT art. 74, fracc. IV"
+    },
+    {
+      "fecha_inicio": "2027-05-03",
+      "fecha_fin": "2027-05-03",
+      "evento": "Inicio de clases del cuatrimestre mayo–agosto 2027",
+      "tipo": "inicio_clases",
+      "confirmado": false
+    },
+    {
+      "fecha_inicio": "2027-05-15",
+      "fecha_fin": "2027-05-15",
+      "evento": "Día del Maestro (cae en sábado)",
+      "tipo": "conmemoracion",
+      "confirmado": true,
+      "notas": "No es descanso obligatorio por ley; algunas instituciones suspenden actividades."
+    },
+    {
+      "fecha_inicio": "2027-08-16",
+      "fecha_fin": "2027-08-27",
+      "evento": "Periodo de cierre del ciclo, reinscripción y vacaciones de verano",
+      "tipo": "vacaciones",
+      "confirmado": false
+    }
+  ],
+  "procesos_recurrentes": [
+    {
+      "proceso": "Publicación de cargas académicas por grupo",
+      "cuando": "Antes de cada cuatrimestre",
+      "donde": "www.upvictoria.edu.mx (Servicios Escolares → Cargas Académicas)"
+    },
+    {
+      "proceso": "Reinscripción y reactivación",
+      "cuando": "Al final de cada cuatrimestre, antes del inicio del siguiente",
+      "donde": "SIISU (siisu.upvictoria.edu.mx)"
+    },
+    {
+      "proceso": "Convocatoria de nuevo ingreso",
+      "cuando": "Se publica a inicios del año (en 2026 fue en febrero); el ingreso principal es en septiembre",
+      "donde": "www.upvictoria.edu.mx y siisu.upvictoria.edu.mx/aspirantes"
+    },
+    {
+      "proceso": "Curso de inducción a Estadías",
+      "cuando": "Antes del cuatrimestre en que se realiza la Estadía",
+      "donde": "Dirección de Vinculación"
+    }
+  ]
+}
