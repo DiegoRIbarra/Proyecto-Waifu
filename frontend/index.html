@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <title>Asistente UPV</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Asistente UPV, inicio">
+          <span class="brand-mark">U</span>
+          <span><strong>Asistente UPV</strong><small>Universidad Politécnica de Victoria</small></span>
+        </a>
+        <div class="topbar-controls">
+          <label class="model-picker">
+            <span>Modelo local</span>
+            <select id="model-select" aria-label="Modelo local"></select>
+          </label>
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Cambiar tema">◐</button>
+          <button id="settings-toggle" class="icon-button" type="button" aria-label="Ver ajustes" title="Ajustes">⚙</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="chat-panel" aria-label="Conversación">
+          <div class="conversation-heading">
+            <div>
+              <p class="eyebrow">ASISTENTE VIRTUAL</p>
+              <h1>¿En qué puedo ayudarte?</h1>
+              <p class="subheading">Pregunta sobre programas, servicios y vida universitaria.</p>
+            </div>
+            <button id="clear-chat" class="text-button" type="button">Nueva conversación</button>
+          </div>
+          <div id="messages" class="messages" aria-live="polite">
+            <div class="welcome-card">
+              <span class="welcome-icon">✦</span>
+              <p>Estoy aquí para orientarte con información de la UPV.</p>
+              <div class="suggestions">
+                <button type="button" data-prompt="¿Qué carreras ofrece la UPV?">Oferta educativa</button>
+                <button type="button" data-prompt="¿Dónde está la biblioteca?">Servicios del campus</button>
+                <button type="button" data-prompt="¿Cuándo inicia el próximo cuatrimestre?">Calendario escolar</button>
+              </div>
+            </div>
+          </div>
+          <div class="composer-wrap">
+            <div class="composer-tools">
+              <div class="mode-switch" role="group" aria-label="Modo de entrada">
+                <button id="voice-mode" class="mode-button active" type="button" aria-pressed="true">◉ Voz</button>
+                <button id="text-mode" class="mode-button" type="button" aria-pressed="false">⌨ Escritura</button>
+              </div>
+              <span id="input-status" class="input-status">Puedes editar la transcripción antes de enviarla</span>
+            </div>
+            <form id="chat-form" class="composer">
+              <textarea id="message-input" rows="1" maxlength="4000" placeholder="Escribe o dicta tu pregunta..." aria-label="Tu pregunta"></textarea>
+              <button id="mic-button" class="mic-button" type="button" aria-label="Iniciar dictado" title="Dictar pregunta">🎙</button>
+              <button id="send-button" class="send-button" type="submit" aria-label="Enviar mensaje">↑</button>
+            </form>
+            <p class="privacy-note">El dictado depende del navegador. Edge TTS requiere internet y envía la respuesta a Microsoft.</p>
+          </div>
+        </section>
+
+        <aside class="avatar-panel" aria-label="Asistente animada">
+          <div class="avatar-topline">
+            <span class="online-indicator"></span>
+            <span>Asistente en línea</span>
+            <button id="avatar-menu-toggle" class="avatar-more" type="button" aria-label="Seleccionar avatar">•••</button>
+          </div>
+          <div id="avatar-picker-wrap" class="avatar-picker-wrap">
+            <label for="avatar-select">Personaje y voz</label>
+            <select id="avatar-select"></select>
+            <small id="voice-label"></small>
+          </div>
+          <div class="avatar-stage">
+            <canvas id="avatar-canvas" aria-label="Avatar animado"></canvas>
+            <div id="avatar-placeholder" class="avatar-placeholder">
+              <span>✦</span>
+              <p>Cargando personaje…</p>
+            </div>
+            <div id="speaking-indicator" class="speaking-indicator" hidden>
+              <span></span><span></span><span></span><span></span><span></span>
+              <small>Hablando</small>
+            </div>
+          </div>
+          <div class="avatar-caption">
+            <strong id="avatar-name">Asistente UPV</strong>
+            <span>Lista para orientarte</span>
+          </div>
+          <div class="connection-state"><span id="connection-dot"></span><span id="connection-label">Conectando modelo local…</span></div>
+        </aside>
+      </main>
+
+      <dialog id="settings-dialog" class="settings-dialog">
+        <form method="dialog" class="settings-content">
+          <div class="dialog-heading">
+            <div><p class="eyebrow">PREFERENCIAS</p><h2>Ajustes</h2></div>
+            <button class="icon-button close-dialog" aria-label="Cerrar ajustes">×</button>
+          </div>
+          <label class="setting-row">
+            <span><strong>Apariencia</strong><small>Cambia entre tema claro y oscuro.</small></span>
+            <select id="theme-select"><option value="dark">Oscuro</option><option value="light">Claro</option></select>
+          </label>
+          <label class="setting-row">
+            <span><strong>Modelo de lenguaje</strong><small>Modelos disponibles en tu instalación de Ollama.</small></span>
+            <select id="settings-model-select"></select>
+          </label>
+          <div class="prompt-setting">
+            <strong>System prompt</strong>
+            <small>Se carga desde <code>backend/config.json</code>. Edita ese archivo para cambiar el comportamiento.</small>
+            <pre id="prompt-preview">Cargando configuración…</pre>
+          </div>
+          <div class="settings-footer"><span id="settings-status">La selección del modelo y tema se guarda en este navegador.</span><button class="primary-button">Listo</button></div>
+        </form>
+      </dialog>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
